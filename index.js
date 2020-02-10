@@ -16,6 +16,8 @@ Person.prototype.calculate = function (){
   console.log(2020-this.yearOfBirth);
 };
 
+Person.prototype.lastName = "cena";
+
 
 //creating instance
 var john = new Person('john',1990,'teacher');
@@ -23,7 +25,8 @@ var jimmy = new Person('jimmy',1980,'banker');
 var ttt = new Person();
 console.log(john);
 console.log(jimmy);
-//console.log(ttt);
-jimmy.calculate();
+console.log(john.lastName);
+console.log(jimmy.lastName);
+//jimmy.calculate();
 
 

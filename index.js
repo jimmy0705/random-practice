@@ -43,5 +43,30 @@ Wallet.prototype.remain= function(){
 var x1 = new Wallet(2000,178);
 
 
-console.log(x1);
-x1.remain();
+// console.log(x1);
+// x1.remain();
+
+///////object.create methods etc. ///////
+
+var personProto = {
+  calculateAge : function(){
+    console.log(2020- this.yearOfBirth);
+  }
+}
+
+var bharat = Object.create(personProto);
+//console.log(bharat);
+bharat.name = "bharat";
+bharat.yearOfBirth = 1989;
+
+// console.log(bharat);
+// bharat.calculateAge();
+
+//proper objet.create way==//
+var ravi = Object.create(personProto,{
+ name:{value:'ravi'},
+ yearOfBirth:{value:1978}
+
+});
+
+console.log(ravi);

@@ -5,15 +5,25 @@ var Person = function(name,yearOfBirth,job){
 this.name = name;
 
 this.yearOfBirth=yearOfBirth;
-this.job = job
+this.job = job;
+// this.age = function (){
+//   console.log(2020-this.yearOfBirth);
+// }
+
 }
+//inheritance
+Person.prototype.calculate = function (){
+  console.log(2020-this.yearOfBirth);
+};
 
 
 //creating instance
 var john = new Person('john',1990,'teacher');
-var jimmy = new Person('jimmy',1990,'banker');
-
+var jimmy = new Person('jimmy',1980,'banker');
+var ttt = new Person();
 console.log(john);
 console.log(jimmy);
+//console.log(ttt);
+jimmy.calculate();
 
 

@@ -69,4 +69,30 @@ var ravi = Object.create(personProto,{
 
 });
 
-console.log(ravi);
+//console.log(ravi);
+
+//=====factory function=====//
+
+function factoryFunction(name,bdate){
+
+return{
+  name:name,
+  bdate:bdate,
+  age: function(){
+    console.log(2020-`${bdate}`);
+  }
+
+};
+
+
+
+}
+
+
+var jimmy =factoryFunction('jimmy',1991)
+
+// console.log(jimmy);
+// jimmy.age();
+
+
+///=========================///

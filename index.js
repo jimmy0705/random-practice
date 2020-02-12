@@ -95,4 +95,29 @@ var jimmy =factoryFunction('jimmy',1991)
 // jimmy.age();
 
 
-///=========================///
+///============OOPS=============///
+
+
+function Details(name,age,school){
+  this.name=name;
+  this.age=age;
+  this.school=school;
+}
+
+//==inheritence===//
+Details.prototype.line= function(){
+  console.log(`${this.name} is a student in ${this.school}`);
+}
+
+
+
+//====instance====//
+
+const johnny = new Details('johnny',25,'frrole');
+
+console.log(johnny);
+johnny.line();
+
+//===findout prototyp===//
+console.log(johnny.constructor.prototype);
+console.log(Object.getPrototypeOf(john));

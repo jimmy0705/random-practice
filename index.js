@@ -115,9 +115,12 @@ Details.prototype.line= function(){
 
 const johnny = new Details('johnny',25,'frrole');
 
-console.log(johnny);
+//console.log(johnny);
 johnny.line();
 
 //===findout prototyp===//
 console.log(johnny.constructor.prototype);
-console.log(Object.getPrototypeOf(john));
+//console.log(Object.getPrototypeOf(john));
+
+
+//=================//

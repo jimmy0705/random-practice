@@ -28,3 +28,19 @@ console.log(arr(100000));
 var t2 = performance.now();
 console.log(t2);
 console.log(`time elapsed:${(t2-t1)/1000} seconds`);
+
+
+///////////////////
+
+ var a = [1, "two", false, null, undefined];
+ a;
+[1, "two", false, null, undefined]
+ a[5] = [1, 2, 3];
+[1, 2, 3]
+ a;
+[1, "two", false, null, undefined, Array[3]]
+// The Array[3] in the result is clickable in the console and it expands the array values. Let's look
+// at an example where you have an array of two elements, both of them being other arrays:
+ var a = [[1, 2, 3], [4, 5, 6]];
+ a;
+[Array[3], Array[3]]

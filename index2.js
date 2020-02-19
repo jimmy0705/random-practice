@@ -130,3 +130,24 @@ var ss = new Set()
 //undefined
 
 ss.add(1)
+
+///// Default parameters
+
+
+
+function render(fog_level=0, spark_level=100){
+console.log(`Fog Level: ${fog_level} and spark_level:
+${spark_level}`)
+}
+render(10); //Fog Level: 10 and spark_level: 100
+
+
+///////////////////
+
+x=[ 1, 2, 3, 4 ];
+
+var z =["fff","jhah"];
+
+
+var s = x.concat(z)
+// [ 1, 2, 3, 4, "fff", "jhah" ]

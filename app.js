@@ -93,4 +93,14 @@ for(var re of values){
     //console.log(re);
     total += re;
 }
-console.log(total);
+//console.log(total);
+
+////======
+
+function test (x){
+    return x;
+    console.log("gghhg");
+}
+
+var dd =test(23);
+console.log(dd);

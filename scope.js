@@ -93,6 +93,7 @@ function sad(){
 
 
 function sss(num){
+    console.log(num)
    return function(x){
         console.log(num*x);
     }
@@ -103,6 +104,7 @@ var double = sss(2);
 
 // triple(5);
 // double(5);
+//sss(3)(2);
 
 //=======callbacks========//
 

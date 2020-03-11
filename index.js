@@ -124,3 +124,35 @@ console.log(johnny.constructor.prototype);
 
 
 //=================//
+
+
+var age =12;
+
+//age <=18 ? console.log("junior student"): console.log("senior student");
+
+var drink = age > 18 ?'beer': 'juice';
+//console.log(drink);
+
+//=======class=========//
+
+ class user{
+
+  constructor(name,age){
+     this.name=name;
+     this.age=age
+  }
+  login(){
+    console.log(`${this.name} is login`);
+  }
+
+  logout(){
+    console.log(`${this.name} is logout`);
+  }
+
+
+}
+
+var user1 = new user("jimmy",19);
+
+// console.log(user1);
+// console.log(user1.login());

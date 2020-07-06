@@ -8,7 +8,5 @@
   },
   "author": "juned",
   "license": "ISC",
-  "dependencies": {
-    "nodemon": "^2.0.2"
-  }
+  "dependencies": {}
 }

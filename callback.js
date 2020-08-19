@@ -65,4 +65,57 @@ var q2 = qq.reduce((accumulator,num)=>{
 })
 
 
-console.log(q2);
+//console.log(q2);
+
+
+///===========promises ||||  async await============///
+
+function bread(){
+  return false;
+}
+
+function egg(){
+  return false;
+}
+
+function bringBread(){
+  return new Promise((resolve,reject)=>{
+    if(bread()){
+      resolve("hear is your bread");
+    }
+    else if(egg()){
+      resolve("here is your egg")
+    }
+    else{
+      reject("nothing is available")
+    }
+  })
+}
+
+// bringBread().then(data=>{
+//   console.log(data);
+// }).catch(err=>{
+//   console.log(err);
+// })
+
+//===========asyyync await=======//
+
+async function final(){
+  try{
+    const data = await bringBread();
+    console.log("getting data after waiting "+data);
+    return data;
+  } catch(e){
+   // console.log(e);
+     return Promise.reject(e);
+  }
+  
+}
+
+final().then(data=>{
+  console.log(data);
+}).catch(err=>{
+  console.log(err);
+})
+///////
+
